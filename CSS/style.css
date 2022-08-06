@@ -1,0 +1,174 @@
+@import url('http://cdnfonts.com/averta-blackitalic.font');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ffffff;
+    font-family: 'Averta-Regular', sans-serif;
+    font-family: 100;
+ 
+}
+.top{
+    background-image: url(../IMG/hero-bg.svg);
+    max-height: 140vh;
+    height: 130vh;
+   padding-top: 80px;
+}
+.img{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+.page-title{
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #514949;
+    margin-bottom: 50px;
+}
+.mission{
+    text-align: center;
+    font-size: 18px;
+    color: #514949;
+    line-height: 1.5;
+}
+#red{
+    color: #e7332b;
+}
+.industry-btns{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+   margin-top: 80px;
+}
+
+
+.btn-1{
+    border: 1px solid #e7332b;
+    background-color: #e7332b;
+    padding: 12px 30px;
+    color: white;
+    font-size: 18px;
+}
+.btn-1:hover{
+    background-color: transparent;
+    color: #e7332b;
+    cursor: pointer;
+}
+/* #clickborder{
+    border: 2px solid black;
+    border-radius: 5px;
+} */
+/* .btn1:focus,.btn-1:active{
+    border: 2px solid black;
+    border-radius: 5px;
+} */
+.btn-2{
+    border: 1px solid #e7332b;
+    background-color:transparent;
+    padding: 12px 30px;
+    color: #e7332b;
+    font-size: 18px;
+}
+.btn-2:hover{
+    background-color: #e7332b;
+    color: white;
+    cursor: pointer;
+   
+}
+.by-zuri-team{
+    margin-top: 100px;
+}
+.by-zuri-team .title{
+    color: #e7332b;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.by-zuri-team h3{
+    color: #514949;
+    text-align: center;
+    font-weight: lighter;
+    line-height: 1.5;
+    font-size: 1.3rem;
+    word-spacing: 5px;
+}
+.zuri-feature{
+    display: flex;
+    width: 100%;
+    padding-top: 5.5em;
+    justify-content: center;
+    gap: 4%;
+    background-image: url(../IMG/right_yz6hn3.png),url(../IMG/left_bvmv7q.png);
+    background-size: contain;
+    background-position: right -20% top 10%,
+                          left -20% top 10%;
+    background-repeat: no-repeat;
+    padding: 0 2.5em;
+    padding-top: 5.5em;
+}
+.zuri-feature > div{
+    background-color: #FFFAFA;
+    padding: 3em 2em;
+    padding-bottom: 4.5em;
+    flex-grow: 1;
+}
+.zuri-feature img{
+    margin-bottom: 2em;
+}
+.zuri-feature .content{
+    color: #514949;
+    line-height: 1.5;
+    margin-bottom: 1em;
+   
+}
+.zuri-feature .footer{
+    color: #e7332b;
+ 
+}
+.zuri-feature a{
+    text-decoration: none;
+}
+footer{
+    padding: 0 2em;
+    padding-top: 18rem;
+    padding-bottom: 5em;
+}
+.footer-links{
+    display: flex;
+    justify-content: space-between;
+}
+footer h3{
+    font-size: 18px;
+    color: #514949;
+    text-transform: capitalize;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+footer a{
+    list-style: none;
+    text-decoration: none;
+    color: #e7332b;
+    font-size: 1rem;
+}
+ .links li{
+ margin-bottom: 1.5em;
+}
+
+
+.contact p{
+    color: #514949;
+    font-size: 1em;
+    margin-bottom: .8em;
+}
+hr{
+   margin:50px 0;
+}
+.copyright{
+    text-align: center;
+    font-weight: bol
+}
+
