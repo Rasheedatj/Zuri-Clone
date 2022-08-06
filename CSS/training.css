@@ -221,9 +221,18 @@ nav ul li a {
 .why-boxes #box-1 {
   background-color: #e7332b;
   color: white;
+  position: relative;
+}
+.why-boxes #box-1::after{
+  content: '';
+  position: absolute;
+  width: 130px;
+  height:130px ;
   background-image: url(../IMG/curve1.png);
   background-repeat: no-repeat;
-  background-position: top 0 right 0;
+  background-size: cover;
+  top: 0;
+  right:  0;
 }
 .why-boxes h1 {
   font-size: 4em;
@@ -238,27 +247,27 @@ nav ul li a {
 .why-boxes #box-2 {
   background-image: url(../IMG/curve\ yellow.svg);
   background-repeat: no-repeat;
-  background-position: top 0 right 0;
+  background-position: top -10% right 0;
 }
 .why-boxes #box-3 {
   background-image: url(../IMG/curve\ green.svg);
   background-repeat: no-repeat;
-  background-position: top 0 right 0;
+  background-position: top -10% right 0;
 }
 .why-boxes #box-4 {
   background-image: url(../IMG/curve\ pink.svg);
   background-repeat: no-repeat;
-  background-position: top 0 right 0;
+  background-position: top -10% right 0;
 }
 .why-boxes #box-5 {
   background-image: url(../IMG/curve\ orange.svg);
   background-repeat: no-repeat;
-  background-position: top 0 right 0;
+  background-position: top -10% right 0;
 }
 .why-boxes #box-6 {
   background-image: url(../IMG/curve\ blue.svg);
   background-repeat: no-repeat;
-  background-position: top 0 right 0;
+  background-position: top -10% right 0;
 }
 
 /* CTA STYLE */
@@ -439,7 +448,7 @@ nav ul li a {
   position: relative;
 }
 .accordion::after{
-  content: url(../img/plus.svg);
+  content: url(../IMG/plus.svg);
   width: 10px;
   font-size: 10px;
   color: black;
@@ -508,11 +517,15 @@ color: #514949;
   font-size: 20px;
 }
 
+/* structure */
 .structure{
   border-top: 1px solid #c5bdbd;
   margin-top: 4em;
-  padding-top: 4em;
+  padding-top: 10em;
   margin-bottom: 15em;
+  background-image: url(../IMG/section7wire.svg), url(../IMG/Star\ red.svg);
+  background-repeat: no-repeat;
+  background-position: left 10% top 0, right 3% top 5%;
 }
 .structure .title{
   color: #e7332b;
@@ -656,14 +669,14 @@ color: #514949;
   color: white;
   border-radius: 20px;
   background-image: url(../IMG/round.svg),
-  url(../img/curve2.svg), url(../IMG/bend1.svg);
+  url(../IMG/curve2.svg), url(../IMG/bend1.svg);
   background-repeat: no-repeat;
   background-position: left 10% top 35%, left 0 bottom -5%,top -5% right 0;
 position: relative;
 }
 .break::after{
   content: '';
-  background-image: url(../img/mains.png);
+  background-image: url(../IMG/mains.png);
   background-repeat: no-repeat;
   width: 150px;
   height: 200px;
