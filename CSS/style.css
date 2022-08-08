@@ -181,18 +181,20 @@ hr{
     }
     .mission{
     
-    font-size: 16.5px;
+    font-size: 16px;
     }
     .industry-btns{
         flex-direction: column;
         align-items: center;
+       
+    
     }
     .btn-2{
         padding: 12px 32px;
     }
-    .by-zuri-team{
-        margin-top: 20px;
-    }
+   .by-zuri-team{
+       margin-top: 10em;
+   }
     .by-zuri-team h3{
         font-size: 1.5rem;
         word-spacing: 5px;

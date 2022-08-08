@@ -26,6 +26,7 @@ nav {
 }
 nav > div {
   flex-grow: 1;
+  width: 100%;
 }
 nav ul {
   display: flex;
@@ -51,7 +52,7 @@ nav ul li a {
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  margin-right: -30px;
+  margin-right: -35px;
   z-index: 100;
   position: relative;
   display: grid;
@@ -62,9 +63,10 @@ nav ul li a {
   background-color: #e7332b;
   border-radius: 30px;
   height: 50px;
-  padding: 0 40px;
-  display: grid;
-  place-items: center;
+  padding: 10px 50px;
+ 
+  display: flex;
+  align-items: center;
   color: white;
   font-size: 1.2rem;
   align-self: center;
@@ -276,18 +278,19 @@ nav ul li a {
   width: 100%;
   padding: 5em 6em;
   padding-bottom: 12em;
-  background-image: url(../IMG/section5wire.svg), url(../IMG/dotsection5.svg);
+  background-image: url(../IMG/section5wire.svg), url(../IMG/dotsection5\ \(1\).svg);
   background-repeat: no-repeat;
-  background-position: top 0 left 26%, bottom 0 left 3%;
+  background-position: top 0 left 26%, bottom 5% left 3%;
 }
 .cta .top {
   display: flex;
   width: 100%;
   align-items: center;
+  flex-wrap: wrap;
 }
 .top > div {
-  width: 100%;
-  flex-grow: 1;
+  width: 50%;
+ 
 }
 .top .box-2 {
   display: flex;
@@ -322,25 +325,23 @@ nav ul li a {
 .top a {
   text-decoration: none;
 }
-.cta .bottom {
+
+.cta .box-3{
   display: flex;
-  width: 50%;
- 
   flex-wrap: wrap;
   gap: 20px;
 }
-.cta .bottom > div {
+.cta .box-3 > div{
   width: 40%;
-  display: flex;
-  justify-content:center;
-  align-items: center;
-  gap: 20px;
   border-radius: 35px;
   color: white;
   border: 2px solid white;
   font-size: 1.1em;
   text-transform: capitalize;
-  justify-content: center;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  gap: 20px;
   cursor: no-drop;
 }
 
@@ -455,7 +456,7 @@ nav ul li a {
   position: absolute;
   right: 0;
 }
-.active::after{
+.accordion:hover::after{
   content: url(../IMG/minus.svg);
   
 }
@@ -708,31 +709,20 @@ right: 0;
 }
 
 /* footer */
-footer {
-  
+
+footer{
   display: flex;
-  
   width: 100%;
-  padding: 5em 0;
-  padding-bottom: 1.5em;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-footer .box-1 {
+footer > div{
+  width: 40%;
+  margin-bottom: 2em;
+}
+footer .imgs,footer .text{
   display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-footer > div {
-  width: 100%;
-}
-footer .box-2 {
-  display: flex;
-  align-items: flex-end;
-  flex-direction: column;
-  gap: 40px;
-}
-footer p {
-  font-size: 18px;
-  color: #514949;
+  justify-content: flex-end;
 }
 footer .imgs {
   display: flex;
@@ -746,7 +736,7 @@ footer i {
   background-color: #e7332b;
   color: white;
   padding: 0.3em;
-  flex-grow: 1;
+  
   border-radius: 50%;
 }
 .fa-facebook,
@@ -762,4 +752,355 @@ footer .text a{
 footer .text{
   display: flex;
   gap: 15px;
+}
+footer p {
+  font-size: 18px;
+  color: #514949;
+}
+
+
+
+/* media query */
+@media screen and (max-width:400px){
+  body{
+    width: 200%;
+  }
+  .body{
+    margin: 0;
+    
+  }
+  .body{
+    padding: 0 2em;
+  }
+header{
+  width: 100%;
+ 
+}
+
+.menu ul li{
+  display: none;
+}
+.round{
+clip-path: circle();
+width: 85px;
+height: 85px;
+margin-right: -40px;
+}
+ .now {
+  font-size: 1.5em;
+ padding:1.5em 0;
+ width: 200px;
+ height: 60px;
+ padding-left: 50px;
+ border-radius: 40px;
+ 
+}
+
+.round{
+  margin-right: -40px;
+} 
+.part-1{
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  padding: 0;
+  background-image: url(../IMG/line.svg), 
+  url(../IMG/section1wire.svg);
+  background-position: bottom 34% left 85%,  bottom 0 right 30%;
+ padding-bottom: 10em;
+}
+.part-1 .img2{
+  display: none;
+}
+.part-1 .img1 img{
+  width: 620px;
+  height: 620px;
+}
+.section-1 h1{
+  font-size:4em;
+}
+.section-1 .text{
+  font-size: 2em;
+}
+.section-1 .title{
+  font-size: 2.3em;
+}
+.section-1 button{
+  padding: 2em 5em;
+}
+
+#about{
+  flex-direction: column;
+  padding: 5em 1em;
+ 
+}
+#about > div{
+ display: flex;
+ justify-content: center;
+}
+#about .box-3{
+  justify-content: center;
+}
+#about .box-1 h2, #about .box-3 p{
+  text-align: center;
+  font-size:2.5em ;
+}
+#why{
+  background-position: top 15% left 55%;
+  padding-top: 10em;
+}
+#why .star{
+  display: none;
+}
+#why .text h1{
+  font-size: 55px;
+}
+#why .text p{
+  font-size: 2.4em;
+}
+.why-boxes{
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.why-boxes > div{
+  width:90%;
+  padding: 9em 5em;
+
+  gap: 40px;
+ 
+}
+.why-boxes h1 {
+  font-size: 5em;
+}
+.why-boxes h2 {
+  font-size:3em;
+  font-weight: normal;
+}
+.why-boxes p {
+  font-size: 2em;
+}
+.cta{
+  padding: 5em 2em;
+}
+.cta .top{
+  flex-wrap: nowrap;
+  flex-direction: column;
+  padding: 0;
+  align-items: flex-start;
+}
+.top .box-1{
+  order: 1;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.top .box-2{
+  order: 3;
+  display: block;
+}
+.top .box-3{
+  order: 2;
+}
+
+.top .box-1 .title {
+  font-size: 2em;
+}
+.top .box-1 h1 {
+  font-size: 4.5em;
+  margin-bottom: 0.8em;
+}
+.top .box-1 .content {
+  font-size: 2.3em;
+  margin-bottom: 1.4em;
+}
+.top button{
+  padding: 1em 3em;
+  font-size: 1.2em;
+  margin-bottom: 4em;
+}
+.cta .box-3{
+  width: 100%;
+}
+.cta .box-3 > div{
+  width: 40%;
+  padding: 1em 0;
+  border-radius: 70px;
+  font-size: 1.5em;
+}
+
+#stacks-covered{
+  align-items: flex-start;
+}
+#stacks-covered .title{
+  font-size: 3em;
+  text-align: left;
+}
+#stacks-covered h1{
+  font-size: 3em;
+  text-align: left;
+}
+.stack-boxes > div{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 6em 4em;
+}
+.stack-boxes .logo{
+  display: flex;
+ width: 100%;
+ gap: 30px;
+
+}
+.stack-boxes .logo img{
+  width: 20%;
+}
+.stack-boxes p{
+  font-size: 2em;
+}
+.stack-boxes h3{
+  font-size: 2em;
+}
+#stacks-covered button{
+  align-self: center;
+  padding: 2em 3em;
+  border-radius: 4em;
+}
+#faq{
+  padding-top: 10em;
+  margin: 0;
+}
+#faq h1{
+  font-size: 2em;
+}
+#faq .footer{
+  flex-direction: column;
+}
+#faq .footer .box-2{
+  padding: 1em 2.5em;
+  border-radius: 30px;
+}
+#faq .box{
+  padding: 4em 3em;
+}
+#faq .accordion{
+  font-size: 2em;
+}
+#faq .answer{
+  font-size: 1.5em;
+}
+.accordion::after{
+  content: url(../IMG/plus.svg);
+  width: 30px;
+  right: -4%;
+  top: 4%;
+}
+.structure{
+  background-image: url(../IMG/section7wire.svg), url(../IMG/Star\ red.svg);
+  background-position: left 10% top 0, right 3% top 0;
+}
+.structure .text{
+  font-size: 2.2em;
+}
+.structure .heading{
+  font-size: 4em;
+}
+.structure .title{
+  font-size: 2em;
+}
+.structure .course{
+  flex-direction: column;
+  align-items: center;
+  background-image: none;
+}
+.structure .course > div{
+  width: 100%;
+  padding: 6em 4em;
+  border-radius: 70px;
+  
+}
+.course::before{
+  bottom: -5%;
+}
+.course h1{
+  font-size: 4em;
+}
+.course h3{
+  font-size: 2.5em;
+}
+.course ul li{
+  font-size: 1.7em;
+}
+.course .head{
+  font-size: 1.5em;
+}
+.full-time::after{
+  bottom: 0;
+}
+.part-time::after{
+  bottom: 0;
+}
+.break{
+  padding: 10em 0;
+  gap: 40px;
+
+}
+.break h1{
+  font-size: 5em;
+}
+footer {
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8em;
+  gap: 1.5em;
+}
+footer > div{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+footer .logo{
+  order: 1;
+}
+footer .logo img{
+  width:85%;
+}
+footer .imgs{
+  order: 2;
+  width: 50%;
+  gap: 30px;
+}
+
+footer .copyright{
+  order: 4;
+  width: 100%;
+}
+footer p{
+  font-size: 2em;
+}
+footer .text{
+  order: 3;
+  width: 100%;
+gap: 3em;
+}
+
+footer .imgs i{
+  width: 30%;
+  font-size: 40px;
+  padding: .5em;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+
+footer .text{
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+footer .text a{
+  font-size: 2em;
+}
 }
