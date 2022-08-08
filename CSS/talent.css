@@ -462,7 +462,7 @@ footer .hr{
       flex-direction: column;
       gap: 40px;
       padding: 4em 3em;
-      margin-bottom: 20em;
+      margin-bottom: 25em;
       
   }
   #home .image{
@@ -481,7 +481,7 @@ footer .hr{
   }
   #home .talent p{
       text-align: center;
-      font-size: 14px;
+      font-size: 13px;
       margin-bottom: .5em;
       
   }
@@ -517,7 +517,7 @@ box-shadow: none;}
     gap: 5em;
 }
 #impact .text h1 {
-  font-size: 30px;
+  font-size: 26.5px;
 }
 #impact .text h3 {
   font-size: 18px;
@@ -566,7 +566,6 @@ margin-bottom: 30em;
 }
 .reasons > div{
     width: 100%;
-    padding: 3em 1.5em;
     font-size: 16px;
 }
 #whyus .btn1 button {
@@ -663,7 +662,6 @@ footer .hr{
 #home .talent p{
   text-align: center;
   font-size: 20px;
-padding: 0 7em;
 }
 #home .btns{
   justify-content: center;
@@ -694,6 +692,7 @@ box-shadow: none;}
   flex-direction: column;
   padding: 5em 0;
   gap: 5em;
+  margin-top: 30em;
 }
 #impact .text h1 {
 font-size: 35px;
@@ -761,16 +760,13 @@ height: 50vh;
 .reasons > div{
     width: 45%;
     font-size: 16px;
-    height: 40vh;
-    
+
 }
 #many{
   width: 93%;
+  display: block;
 }
 
-#many .content{
-  width: fit-content;
-}
 #whyus .btn1 button {
   padding: 9px 15px;
   font-size: 18px;
