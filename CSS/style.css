@@ -175,8 +175,8 @@ hr{
     .top{
         padding: 0 1em;
         padding-top: 80px;
+        padding-bottom: 24em;
         background-repeat: no-repeat;
-       
         height: 80vh;
     }
     .mission{
@@ -193,7 +193,7 @@ hr{
         padding: 12px 32px;
     }
    .by-zuri-team{
-       margin-top: 10em;
+       margin-top: 15em;
    }
     .by-zuri-team h3{
         font-size: 1.5rem;
@@ -201,7 +201,7 @@ hr{
     }
     .zuri-feature{
         flex-direction: column;
-        gap: 40px;
+        gap: 30px;
         background-image: none;
     }
     .zuri-feature .content{
@@ -246,7 +246,7 @@ hr{
     .top{
         padding: 0 1em;
         padding-top: 80px;
-        padding-bottom: 4em;
+        padding-bottom: 30em;
         background-position: center;
         background-repeat: no-repeat;
         height: 80vh;
@@ -257,7 +257,7 @@ hr{
     }
     .zuri-feature{
         flex-direction: column;
-        gap: 50px;
+        gap: 30px;
         background-image: none;
     }
     .zuri-feature .content{
