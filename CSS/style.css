@@ -198,6 +198,7 @@ hr{
     .by-zuri-team h3{
         font-size: 1.5rem;
         word-spacing: 5px;
+        font-weight: 300;
     }
     .zuri-feature{
         flex-direction: column;
