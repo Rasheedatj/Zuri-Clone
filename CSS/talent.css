@@ -9,6 +9,8 @@ body {
   font-size: 1rem;
   background-color: #fff;
   font-family: "Roboto";
+  width: 100%;
+  
   
 }
 /* Navigation bar */
@@ -385,6 +387,8 @@ footer .hr{
   width: 100%;
   background-color: transparent;
   overflow: auto;
+  background-color: rebeccapurple;
+  
   
 }
 .modal-content {
@@ -642,7 +646,7 @@ footer .hr{
   flex-direction: column;
   gap: 40px;
   padding:6em 5.3em;
-  margin-bottom: 23em;
+  margin-bottom: 30em;
   
 }
 #home .image{
@@ -754,7 +758,7 @@ text-align: center;
 width: 100%;
 margin-top: 5em;
 margin-bottom: 40em;
-height: 50vh;
+
 
 }
 .reasons > div{
