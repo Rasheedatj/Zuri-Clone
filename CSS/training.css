@@ -18,6 +18,7 @@ header {
   top: 0;
   z-index: 100;
   background-color: rgb(255, 253, 245);
+  width: 100%;
 }
 nav {
   display: flex;
@@ -106,11 +107,12 @@ nav ul li a {
   margin-bottom: 1em;
 }
 .section-1 .text {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: #514949;
   text-align: center;
   line-height: 1.3;
   margin-bottom: 1.7em;
+  padding: 0 4em;
 }
 .section-1 button {
   background-color: #e7332b;
@@ -224,18 +226,12 @@ nav ul li a {
   background-color: #e7332b;
   color: white;
   position: relative;
-}
-.why-boxes #box-1::after{
-  content: '';
-  position: absolute;
-  width: 130px;
-  height:130px ;
   background-image: url(../IMG/curve1.png);
   background-repeat: no-repeat;
-  background-size: cover;
-  top: 0;
-  right:  0;
+  background-position: top right;
+  background-size: 128px;
 }
+
 .why-boxes h1 {
   font-size: 4em;
 }
@@ -245,31 +241,37 @@ nav ul li a {
 }
 .why-boxes p {
   font-size: 1.1em;
+  padding-right: 3em;
 }
 .why-boxes #box-2 {
   background-image: url(../IMG/curve\ yellow.svg);
   background-repeat: no-repeat;
-  background-position: top -10% right 0;
+  background-position: top right;
+  background-size: 130px;
 }
 .why-boxes #box-3 {
   background-image: url(../IMG/curve\ green.svg);
   background-repeat: no-repeat;
-  background-position: top -10% right 0;
+  background-position: top right;
+  background-size: 130px;
 }
 .why-boxes #box-4 {
   background-image: url(../IMG/curve\ pink.svg);
   background-repeat: no-repeat;
-  background-position: top -10% right 0;
+  background-position: top right;
+  background-size: 130px;
 }
 .why-boxes #box-5 {
   background-image: url(../IMG/curve\ orange.svg);
   background-repeat: no-repeat;
-  background-position: top -10% right 0;
+  background-position: top right;
+  background-size: 130px;
 }
 .why-boxes #box-6 {
   background-image: url(../IMG/curve\ blue.svg);
   background-repeat: no-repeat;
-  background-position: top -10% right 0;
+  background-position: top right;
+  background-size: 130px;
 }
 
 /* CTA STYLE */
@@ -305,13 +307,14 @@ nav ul li a {
   line-height: 1.5;
 }
 .top .box-1 h1 {
-  font-size: 2.3em;
+  font-size: 3em;
   margin-bottom: 0.8em;
   line-height: 1.4;
 }
 .top .box-1 .content {
-  font-size: 1.1em;
+  font-size: 1.2em;
   margin-bottom: 1.4em;
+  padding-right: 8em;
 }
 .top button {
   background-color: white;
@@ -372,10 +375,12 @@ nav ul li a {
   font-size: 1.5em;
   line-height: 1.7;
   font-weight: 100;
+  align-self: flex-start;
 }
 #stacks-covered h1{
   font-size: 2.7em;
- 
+ width: 50%;
+ align-self: flex-start;
 }
 .stack-boxes{
   display: flex;
@@ -390,8 +395,9 @@ nav ul li a {
   margin-bottom: 20px;
   background-color: white;
   padding-top: 3.6em;
-  padding-left: 2.5em;
-  padding-bottom: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 1.5em;
   border-radius: 40px;
   box-shadow: 0 31px 60px rgba(231,51,43,.2)
  
@@ -409,6 +415,7 @@ nav ul li a {
 .stack-boxes p{
   line-height: 1.5;
   font-size: 1em;
+ 
 }
 #stacks-covered button {
   background-color: #e7332b;
@@ -450,15 +457,15 @@ nav ul li a {
 }
 .accordion::after{
   content: url(../IMG/plus.svg);
-  width: 10px;
+  width: 15px;
   font-size: 10px;
   color: black;
   position: absolute;
   right: 0;
+transition: transform 300ms ease;
 }
 .accordion:hover::after{
-  content: url(../IMG/minus.svg);
-  
+  transform: rotate(270deg);
 }
 #faq .box{
   border: 2px solid rgba(71,44,111,.43);
@@ -586,6 +593,7 @@ color: #514949;
   color: white;
   padding-top: 4em;
   padding-left: 3em;
+  padding-right: 3em;
   padding-bottom: 2em;
   box-shadow: 0 31px 60px rgba(231,51,43,.2)
 }
@@ -693,7 +701,8 @@ right: 0;
 }
 .break h1{
   font-size: 3.5em;
-
+padding: 0 5em;
+text-align: center;
 }
 .break button {
   background-color: white;
@@ -763,7 +772,8 @@ footer p {
 /* media query */
 @media screen and (max-width:400px){
   body{
-    width: 100%;
+    width: 200%;
+    
   }
   .body{
     margin: 0;
@@ -806,7 +816,7 @@ margin-right: -40px;
   padding: 0;
   background-image: url(../IMG/line.svg), 
   url(../IMG/section1wire.svg);
-  background-position: bottom 34% left 85%,  bottom 0 right 30%;
+  background-position: bottom 33% left 88%,  bottom 0 right 30%;
  padding-bottom: 10em;
 }
 .part-1 .img2{
@@ -821,12 +831,14 @@ margin-right: -40px;
 }
 .section-1 .text{
   font-size: 2em;
+  padding: 0;
 }
 .section-1 .title{
   font-size: 2.3em;
 }
 .section-1 button{
-  padding: 2em 5em;
+  padding: 1em 3em;
+  font-size: 18px;
 }
 
 #about{
@@ -845,6 +857,10 @@ margin-right: -40px;
   text-align: center;
   font-size:2.5em ;
 }
+#about .box-3 a {
+  color: rgb(117, 235, 154);
+  font-size: 30px;
+}
 #why{
   background-position: top 15% left 55%;
   padding-top: 10em;
@@ -853,7 +869,8 @@ margin-right: -40px;
   display: none;
 }
 #why .text h1{
-  font-size: 55px;
+  font-size: 60px;
+  line-height: 1.5;
 }
 #why .text p{
   font-size: 2.4em;
@@ -866,10 +883,12 @@ margin-right: -40px;
 .why-boxes > div{
   width:90%;
   padding: 9em 5em;
-
   gap: 40px;
- 
 }
+.why-boxes #box-1, .why-boxes #box-2,.why-boxes #box-3,.why-boxes #box-4,.why-boxes #box-5,.why-boxes #box-6{
+  background-size: 200px;
+}
+
 .why-boxes h1 {
   font-size: 5em;
 }
@@ -879,6 +898,7 @@ margin-right: -40px;
 }
 .why-boxes p {
   font-size: 2em;
+  padding: 0;
 }
 .cta{
   padding: 5em 2em;
@@ -908,16 +928,17 @@ margin-right: -40px;
   font-size: 2em;
 }
 .top .box-1 h1 {
-  font-size: 4.5em;
+  font-size: 4.2em;
   margin-bottom: 0.8em;
 }
 .top .box-1 .content {
-  font-size: 2.3em;
+  font-size: 2.2em;
   margin-bottom: 1.4em;
+  padding: 0;
 }
 .top button{
-  padding: 1em 3em;
-  font-size: 1.2em;
+  padding: 1em 2em;
+  font-size: 23px;
   margin-bottom: 4em;
 }
 .cta .box-3{
@@ -925,9 +946,9 @@ margin-right: -40px;
 }
 .cta .box-3 > div{
   width: 40%;
-  padding: 1em 0;
+  padding: .5em 0;
   border-radius: 70px;
-  font-size: 1.5em;
+  font-size: 1.7em;
 }
 
 #stacks-covered{
@@ -940,6 +961,7 @@ margin-right: -40px;
 #stacks-covered h1{
   font-size: 3em;
   text-align: left;
+  width: 90%;
 }
 .stack-boxes > div{
   width: 100%;
@@ -964,18 +986,24 @@ margin-right: -40px;
 }
 #stacks-covered button{
   align-self: center;
-  padding: 2em 3em;
+  padding: 1em 2em;
   border-radius: 4em;
+  font-size: 20px;
 }
 #faq{
   padding-top: 10em;
   margin: 0;
 }
-#faq h1{
+#faq .title{
   font-size: 2em;
+}
+#faq h1{
+  font-size: 3.5em;
+  font-weight: bolder;
 }
 #faq .footer{
   flex-direction: column;
+  margin-top: 5em;
 }
 #faq .footer .box-2{
   padding: 1em 2.5em;
@@ -1043,11 +1071,19 @@ margin-right: -40px;
 }
 .break{
   padding: 10em 0;
-  gap: 40px;
+  gap: 50px;
 
 }
+.break p{
+  font-size: 2em;
+}
 .break h1{
-  font-size: 5em;
+  font-size: 3.5em;
+  text-align: center;
+  padding: 0 3em;
+}
+.break button{
+  font-size: 2em;
 }
 footer {
   flex-direction: column;
@@ -1104,3 +1140,4 @@ footer .text a{
   font-size: 2em;
 }
 }
+
