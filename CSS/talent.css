@@ -565,8 +565,8 @@ box-shadow: none;}
 flex-wrap: nowrap;
 flex-direction: column;
 width: 100%;
-margin-top: 20em;
-margin-bottom: 20em;
+margin-top: 5em;
+margin-bottom: 5em;
 }
 .reasons > div{
     width: 100%;
