@@ -275,7 +275,6 @@ nav button {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  height: 100vh;
   justify-content: center;
   gap: 15px;
   margin-top: 5em;
@@ -286,7 +285,6 @@ nav button {
 }
 .reasons > div {
   width: 30%;
-  height: 45vh;
   background-color: white;
   display: grid;
   place-items: center;
@@ -565,7 +563,7 @@ box-shadow: none;}
 flex-wrap: nowrap;
 flex-direction: column;
 width: 100%;
-margin-top: 0;
+margin-top: 3em;
 margin-bottom: 0;
 }
 .reasons > div{
