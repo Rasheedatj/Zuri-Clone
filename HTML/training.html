@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ 
     <link rel="stylesheet" href="../CSS/training.css" />
    <link rel="stylesheet" href="../CSS/mediaquery.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+   <link rel="shortcut icon" href="../IMG/favicon (1).ico" type="image/x-icon">
     <script
       src="https://kit.fontawesome.com/2bfe15d79d.js"
       crossorigin="anonymous"
@@ -219,7 +220,7 @@
         </div>
 
         <div class="box-2">
-          <img src="../IMG/foil.png" alt="tech woman" width="600px" />
+          <img src="../IMG/foil.png" alt="tech woman" width="100%" />
         </div>
       
       <div class="box-3">
@@ -575,8 +576,8 @@
       }
 
       for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function () {
-          this.classList.toggle("active");
+        acc.addEventListener("click",  () => {
+          acc.classList.toggle("active");
           var answer = this.nextElementSibling;
           if (answer.style.maxHeight) {
             answer.style.maxHeight = null;

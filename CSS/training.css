@@ -770,7 +770,8 @@ footer p {
 
 
 /* media query */
-@media screen and (max-width:400px){
+@media screen and (max-width:420px){
+ 
   body{
     width: 200%;
     
@@ -786,6 +787,7 @@ header{
   width: 100%;
  
 }
+
 
 .menu ul li{
   display: none;
@@ -825,6 +827,7 @@ margin-right: -40px;
 .part-1 .img1 img{
   width: 620px;
   height: 620px;
+ 
 }
 .section-1 h1{
   font-size:4em;
@@ -919,6 +922,9 @@ margin-right: -40px;
 .top .box-2{
   order: 3;
   display: block;
+}
+.top .box-2 img{
+  width: 200%;
 }
 .top .box-3{
   order: 2;
