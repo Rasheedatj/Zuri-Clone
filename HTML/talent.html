@@ -17,20 +17,19 @@
     
     <!-- navigation abr -->
     <header>
-      <nav>
+      <nav >
+
         <div class="page-logo">
-          <a href="#"
-            ><img src="../IMG/logo-talent.svg" alt="logo"
-          /></a>
+          <a href="#"><img src="../IMG/logo-talent.svg" alt="logo"/></a>
         </div>
+
         <div class="nav">
           <ul>
-        <li class="ex">  <a href="#home" class="navlink"  >home</a></li>
-          <li><a href="#impact" class="navlink" >impact</a></li>
-    <li>      <a href="#whyus" class="navlink" >why us</a></li>
-    <button id="myBtn"  >Hire talent</button>
+        <li class="ex"><a href="#home" class="navlink">home</a></li>
+        <li><a href="#impact" class="navlink">impact</a></li>
+        <li><a href="#whyus" class="navlink">why us</a></li>
+        <button id="myBtn"  >Hire talent</button>
         </ul>
-     
         </div>
      
       </nav>
@@ -43,9 +42,13 @@
       <p>We will love to discuss your business <br>
          and your talent needs.</p>
        <div class="button">
-        <button class="btn-1">Fill this form</button>
+        <a href="https://forms.gle/QFsTDVg2EhpY32Pd9">
+          <button class="btn-1">Fill this form</button>
+        </a>
         <p>or</p>
-        <button class="btn-2">Book a Consultation</button>
+        <a href="https://calendly.com/zuri-team/consult-with-seyi?month=2022-04">
+          <button class="btn-2">Book a Consultation</button>
+        </a>
        </div>
     </div>
    </div>
@@ -63,10 +66,10 @@
           </p>
           <div class="btns">
             <div class="btn-1">
-              <button>Hire Talent</button>
+              <button id="myBtn2"  >Hire talent</button>
             </div>
             <div class="btn-2">
-              <button>Join Talent pool</button>
+              <button id="poolModalBtn">Join Talent pool</button>
             </div>
           </div>
         </div>
@@ -79,6 +82,19 @@
           />
         </div>
       </section>
+
+      <!-- modal 2 -->
+      <div class="modal modal-talent">
+        <div class="modal-content content2">
+          <h1>Join Talent Pool</h1>
+          <p>Interested in joining our Talent Pool?</p>
+           <div class="button">
+         <a href="https://docs.google.com/forms/d/e/1FAIpQLSenlbLaRmpPCRzby9DJ71pyChTBurIhcCFOyiZxEX1IMwxXtg/viewform">
+            <button >Click here to sign up</button>
+        </a>
+           </div>
+        </div>
+       </div>
 
       <!-- IMPACT -->
       <section id="impact">
@@ -200,10 +216,10 @@
 
         <div class="btns">
           <div class="btn1">
-            <button>Hire Talent</button>
+            <button id="myBtn3">Hire Talent</button>
           </div>
           <div class="btn2">
-            <button>Join Talent pool</button>
+            <button id="poolModalBtn2">Join Talent pool</button>
           </div>
         </div>
       </div>
@@ -215,10 +231,10 @@
             <img src="../IMG/logo-training-footer.svg" class="logo" alt="footer logo">
           </div>
           <div class="imgs">
-            <i class="fa fa-facebook" aria-hidden="true"></i>
-            <i class="fa fa-linkedin" aria-hidden="true"></i>
-            <i class="fa fa-twitter" aria-hidden="true"></i>
-            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+          <a href="https://www.facebook.com/thezuriteam/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/company/zuri-team"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/thezuriteam"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://www.youtube.com/thezuriteam"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
           </div>
           <div class="copyright">
          <p>   &copy;  Copyright 2022 ZURI TEAM. All rights Reserved.</p>
@@ -232,30 +248,6 @@
       </footer>
     </section>
     
-  <script>
-        // Get the modal
-        var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
-var btn = document.getElementsById("myBtn");
-
-
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-  </script>
+  <script src="../script.js"></script>
   </body>
 </html>

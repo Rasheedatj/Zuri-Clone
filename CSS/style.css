@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 body{
     background-color: #ffffff;
@@ -13,9 +14,11 @@ body{
 }
 .top{
     background-image: url(../IMG/hero-bg.svg);
-    max-height: 140vh;
+    background-repeat: no-repeat;
+    max-height: 100vh;
     height: 130vh;
-   padding-top: 80px;
+    padding-top: 100px;
+   
 }
 .img{
     display: flex;
@@ -38,6 +41,10 @@ body{
 }
 #red{
     color: #e7332b;
+    text-decoration: none;
+}
+#red:hover{
+    opacity: .8;
 }
 .industry-btns{
     display: flex;
@@ -115,12 +122,13 @@ body{
 .zuri-feature .content{
     color: #514949;
     line-height: 1.5;
-    margin-bottom: 1em;
-   
+    margin-bottom: 2em;
+   font-size: 1.2rem;
+   opacity: 0.85;
 }
 .zuri-feature .footer{
     color: #e7332b;
- 
+    font-size: 1.2rem;
 }
 .zuri-feature a{
     text-decoration: none;

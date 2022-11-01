@@ -4,6 +4,8 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
 }
 body {
   background-color: rgb(255, 253, 245);
@@ -19,6 +21,7 @@ header {
   z-index: 100;
   background-color: rgb(255, 253, 245);
   width: 100%;
+  
 }
 nav {
   display: flex;
@@ -29,10 +32,14 @@ nav > div {
   flex-grow: 1;
   width: 100%;
 }
+nav .page-logo{
+  width: 60%;
+}
 nav ul {
   display: flex;
   width: 100%;
   justify-content: space-around;
+
 }
 nav ul li {
   list-style: none;
@@ -43,8 +50,10 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: #514949;
+  opacity: 0.85;
 }
 .enroll {
+  width: 50%;
   display: flex;
   justify-content: flex-end;
 }
@@ -444,18 +453,16 @@ nav ul li a {
 }
 
 
-#faq .accordion{
-  background-color: transparent;
+#faq .question{
   cursor: pointer;
-  border: none;
-  outline: none;
   width: 100%;
   text-align: left;
   font-size: 1.2em;
   font-weight: bold;
   position: relative;
 }
-.accordion::after{
+
+.question::after{
   content: url(../IMG/plus.svg);
   width: 15px;
   font-size: 10px;
@@ -464,25 +471,30 @@ nav ul li a {
   right: 0;
 transition: transform 300ms ease;
 }
-.accordion:hover::after{
-  transform: rotate(270deg);
-}
-#faq .box{
+
+#faq .box-container{
   border: 2px solid rgba(71,44,111,.43);
   border-bottom-width: 1px;
   padding: 2em;
 }
 
 #faq .answer{
-  transition: max-height 400ms ease-out;
-  background-color: transparent;
-  display: none;
-  overflow: hidden;
   text-align: left;
-  padding-top: 10px;
-  font-size: 15px;
-  max-height: 0;
+  padding-top: 20px;
+  font-size: 20px;
+  height: 0px;
+  overflow: hidden;
+  transition: height 400ms ease-out;
 }
+
+#faq .box-container.active .answer{
+  height: 70px;
+}
+
+#faq .box-container.active .question::after{
+  transform: rotate(90deg);
+}
+
 #faq .title{
   color: #e7332b;
   font-size: 1.5em;
@@ -515,6 +527,7 @@ color: #514949;
   background-color: #e7332b;
   border-radius: 20px;
   padding: .7em 1.3em;
+  align-items: center;
 }
 #faq .footer .box-2 a{
   text-decoration: none;
@@ -724,6 +737,7 @@ footer{
   width: 100%;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding-top: 1rem;
 }
 footer > div{
   width: 40%;
@@ -774,7 +788,6 @@ footer p {
  
   body{
     width: 200%;
-    
   }
   .body{
     margin: 0;
@@ -785,18 +798,20 @@ footer p {
   }
 header{
   width: 100%;
- 
+  padding: 2em;
 }
 
 
 .menu ul li{
   display: none;
 }
+
 .round{
 clip-path: circle();
 width: 85px;
 height: 85px;
 margin-right: -40px;
+
 }
  .now {
   font-size: 1.5em;
@@ -825,8 +840,7 @@ margin-right: -40px;
   display: none;
 }
 .part-1 .img1 img{
-  width: 620px;
-  height: 620px;
+width: 100%;
  
 }
 .section-1 h1{
@@ -1000,6 +1014,9 @@ margin-right: -40px;
   padding-top: 10em;
   margin: 0;
 }
+#faq .box-container{
+  padding-inline: 1.5rem;
+}
 #faq .title{
   font-size: 2em;
 }
@@ -1011,9 +1028,15 @@ margin-right: -40px;
   flex-direction: column;
   margin-top: 5em;
 }
+#faq .footer .box-1 p{
+  font-size: 1.5rem;
+}
 #faq .footer .box-2{
   padding: 1em 2.5em;
   border-radius: 30px;
+}
+#faq .footer .box-2 a{
+  font-size: 1.5rem;
 }
 #faq .box{
   padding: 4em 3em;
@@ -1022,14 +1045,17 @@ margin-right: -40px;
   font-size: 2em;
 }
 #faq .answer{
-  font-size: 1.5em;
+  font-size: 1.3rem;
 }
-.accordion::after{
+#faq .question{
+  font-size: 1.5rem;
+}
+/* .accordion::after{
   content: url(../IMG/plus.svg);
   width: 30px;
   right: -4%;
   top: 4%;
-}
+} */
 .structure{
   background-image: url(../IMG/section7wire.svg), url(../IMG/Star\ red.svg);
   background-position: left 10% top 0, right 3% top 0;

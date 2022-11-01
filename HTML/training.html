@@ -48,8 +48,7 @@
           <img
             src="../IMG/lady1-removebg-preview.png"
             alt="a tech babe"
-            width="320px"
-            height="320px"
+           width="130%"
           />
         </div>
         <div class="section-1">
@@ -355,35 +354,31 @@
       </section>
 
       <section id="faq">
+
         <p class="title">got questions?</p>
         <h1>frequently asked questions</h1>
-        <div class="qanda">
-          <div class="box">
-            <button class="accordion">
-              Would I have to pay to enroll for the training?
-            </button>
+
+        <div class="accordion">
+
+          <div class="box-container">
+            <h3 class="question"> Would I have to pay to enroll for the training?</h3>
             <div class="answer">
-              <p>
-                No, the program is completely free thanks to Ingressive For Good
-              </p>
+              <p> No, the program is completely free thanks to Ingressive For Good</p>
             </div>
           </div>
-          <div class="box">
-            <button class="accordion">
-              What are the things I would need to participate?
-            </button>
+
+          <div class="box-container">
+            <h3 class="question">What are the things I would need to participate?</h3>
             <div class="answer">
               <p>
-                You'll need a laptop, internet connection and the willingness to
-                learn through collaboration and mentorship.
+                You'll need a laptop, internet connection and the willingness to 
+                learn through collaboration and mentorship
               </p>
             </div>
           </div>
 
-          <div class="box">
-            <button class="accordion">
-              What happens if i join and I’m not active?
-            </button>
+          <div class="box-container">
+            <h3 class="question">What happens if i join and I’m not active?</h3>
             <div class="answer">
               <p>
                 Participants who join the program and stop engaging will be
@@ -395,10 +390,8 @@
             </div>
           </div>
 
-          <div class="box">
-            <button class="accordion">
-              Can I switch from the part-time track to full-time and vice versa?
-            </button>
+          <div class="box-container">
+            <h3 class="question"> Can I switch from the part-time track to full-time and vice versa?</h3>
             <div class="answer">
               <p>
                 Unfortunately, no, you cannot switch from part-time to full-time
@@ -407,8 +400,8 @@
             </div>
           </div>
 
-          <div class="box">
-            <button class="accordion">Will I get paid?</button>
+          <div class="box-container">
+            <h3 class="question">Will I get paid?</h3>
             <div class="answer">
               We reward some participants who complete tasks early, however,
               this is not a weekly reward. All the work that will be done during
@@ -558,34 +551,6 @@
    
 
     </section>
-    <script>
-      var acc = document.getElementsByClassName("accordion");
-      var i;
-
-      for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function () {
-          this.classList.toggle("active");
-          var answer = this.nextElementSibling;
-
-          if (answer.style.display === "block") {
-            answer.style.display = "none";
-          } else {
-            answer.style.display = "block";
-          }
-        });
-      }
-
-      for (i = 0; i < acc.length; i++) {
-        acc.addEventListener("click",  () => {
-          acc.classList.toggle("active");
-          var answer = this.nextElementSibling;
-          if (answer.style.maxHeight) {
-            answer.style.maxHeight = null;
-          } else {
-            answer.style.maxHeight = answer.scrollHeight + "px";
-          }
-        });
-      }
-    </script>
+ <script src="../app.js"></script>
   </body>
 </html>
