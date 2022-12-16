@@ -7,13 +7,16 @@
   scroll-behavior: smooth;
   scroll-padding-top: 6rem;
 }
+
 body {
   background-color: rgb(255, 253, 245);
   font-family: "Roboto";
 }
+
 .body {
   margin: 0 4em;
 }
+
 header {
   padding: 1em 3em;
   position: sticky;
@@ -51,7 +54,22 @@ nav ul li a {
   text-decoration: none;
   color: #514949;
   opacity: 0.85;
+  display: inline-block;
 }
+
+nav ul li :hover{
+  color: #e7332b;
+}
+
+nav ul li .active{
+  color: #e7332b;
+  border-bottom: 5px solid currentColor;
+  border-radius: 3px;
+  width: 100%;
+  padding-bottom: .5rem;
+  /* transition: 500ms ease; */
+}
+
 .enroll {
   width: 50%;
   display: flex;

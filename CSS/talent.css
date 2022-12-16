@@ -33,8 +33,13 @@ nav {
   padding: 2rem 5rem;
   padding-bottom: 2.5rem;
 }
-nav > div {
-  width: 100%;
+
+nav .page-logo{
+  width: 40%;
+}
+
+nav .nav{
+  width: 60%;
 }
 
 .nav ul {
@@ -63,22 +68,21 @@ nav > div {
   cursor: pointer;
 }
 
- .nav li:hover {
-  background-color: aliceblue;
-  /* border-bottom: 2px solid #e7332b; */
+nav ul li :hover{  
+    color: #e7332b;
 }
-li::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 3px;
-  background-color: #e7332b;
+
+nav ul li .active{
+  color: #e7332b;
+  border-bottom: 5px solid currentColor;
+  border-radius: 2px;
   bottom: 0;
-  left: 0;
+  background-color: aliceblue;
+  padding: .6rem 1.2rem;
 }
-li:hover:after {
-  width: 70px;
-}
+
+
+
 
 header .page-logo {
   align-self: center;
