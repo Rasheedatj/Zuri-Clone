@@ -1,202 +1,586 @@
-@media screen and (min-width:420px) and (max-width:830px){
-  body{
-    width: 100%;
+@media screen and (max-width: 420px) {
+  body {
+    width: 200%;
   }
-  .body{
+  .body {
     margin: 0;
   }
-  .body{
+  .body {
     padding: 0 2em;
   }
-header{
-  width: 100%;
- 
+  header {
+    width: 100%;
+    padding: 2em;
+  }
+
+  .menu ul li {
+    display: none;
+  }
+
+  .round {
+    clip-path: circle();
+    width: 85px;
+    height: 85px;
+    margin-right: -40px;
+  }
+  .now {
+    font-size: 1.5em;
+    padding: 1.5em 0;
+    width: 200px;
+    height: 60px;
+    padding-left: 50px;
+    border-radius: 40px;
+  }
+
+  .round {
+    margin-right: -40px;
+  }
+  .part-1 {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding: 0;
+    background-image: url(../IMG/line.svg), url(../IMG/section1wire.svg);
+    background-position: bottom 33% left 88%, bottom 0 right 30%;
+    padding-bottom: 10em;
+  }
+  .part-1 .img2 {
+    display: none;
+  }
+  .part-1 .img1 img {
+    width: 100%;
+  }
+  .section-1 h1 {
+    font-size: 4em;
+  }
+  .section-1 .text {
+    font-size: 2em;
+    padding: 0;
+  }
+  .section-1 .title {
+    font-size: 2.3em;
+  }
+  .section-1 button {
+    padding: 1em 3em;
+    font-size: 18px;
+  }
+
+  #about {
+    flex-direction: column;
+    padding: 5em 1em;
+  }
+  #about > div {
+    display: flex;
+    justify-content: center;
+  }
+  #about .box-3 {
+    justify-content: center;
+  }
+  #about .box-1 h2,
+  #about .box-3 p {
+    text-align: center;
+    font-size: 2.5em;
+  }
+  #about .box-3 a {
+    color: rgb(117, 235, 154);
+    font-size: 30px;
+  }
+  #why {
+    background-position: top 15% left 55%;
+    padding-top: 10em;
+  }
+  #why .star {
+    display: none;
+  }
+  #why .text h1 {
+    font-size: 60px;
+    line-height: 1.5;
+  }
+  #why .text p {
+    font-size: 2.4em;
+  }
+  .why-boxes {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .why-boxes > div {
+    width: 90%;
+    padding: 9em 5em;
+    gap: 40px;
+  }
+  .why-boxes #box-1,
+  .why-boxes #box-2,
+  .why-boxes #box-3,
+  .why-boxes #box-4,
+  .why-boxes #box-5,
+  .why-boxes #box-6 {
+    background-size: 200px;
+  }
+
+  .why-boxes h1 {
+    font-size: 5em;
+  }
+  .why-boxes h2 {
+    font-size: 3em;
+    font-weight: normal;
+  }
+  .why-boxes p {
+    font-size: 2em;
+    padding: 0;
+  }
+  .cta {
+    padding: 5em 2em;
+  }
+  .cta .top {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding: 0;
+    align-items: flex-start;
+  }
+  .top .box-1 {
+    order: 1;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  .top .box-2 {
+    order: 3;
+    display: block;
+  }
+  .top .box-2 img {
+    width: 200%;
+  }
+  .top .box-3 {
+    order: 2;
+  }
+
+  .top .box-1 .title {
+    font-size: 2em;
+  }
+  .top .box-1 h1 {
+    font-size: 4.2em;
+    margin-bottom: 0.8em;
+  }
+  .top .box-1 .content {
+    font-size: 2.2em;
+    margin-bottom: 1.4em;
+    padding: 0;
+  }
+  .top button {
+    padding: 1em 2em;
+    font-size: 23px;
+    margin-bottom: 4em;
+  }
+  .cta .box-3 {
+    width: 100%;
+  }
+  .cta .box-3 > div {
+    width: 40%;
+    padding: 0.5em 0;
+    border-radius: 70px;
+    font-size: 1.7em;
+  }
+
+  #stacks-covered {
+    align-items: flex-start;
+  }
+  #stacks-covered .title {
+    font-size: 3em;
+    text-align: left;
+  }
+  #stacks-covered h1 {
+    font-size: 3em;
+    text-align: left;
+    width: 90%;
+  }
+  .stack-boxes {
+    gap: 2rem;
+  }
+  .stack-boxes > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 6em 4em;
+  }
+  .stack-boxes .logo {
+    display: flex;
+    width: 100%;
+    gap: 30px;
+  }
+  .stack-boxes .logo img {
+    width: 20%;
+  }
+  .stack-boxes p {
+    font-size: 2em;
+  }
+  .stack-boxes h3 {
+    font-size: 2em;
+  }
+  #stacks-covered button {
+    align-self: center;
+    padding: 1em 2em;
+    border-radius: 4em;
+    font-size: 20px;
+  }
+  #faq {
+    padding-top: 10em;
+    margin: 0;
+  }
+  #faq .box-container {
+    padding-inline: 1.5rem;
+  }
+  #faq .title {
+    font-size: 2em;
+  }
+  #faq h1 {
+    font-size: 3.5em;
+    font-weight: bolder;
+  }
+  #faq .footer {
+    flex-direction: column;
+    margin-top: 5em;
+  }
+  #faq .footer .box-1 p {
+    font-size: 1.5rem;
+  }
+  #faq .footer .box-2 {
+    padding: 1em 2.5em;
+    border-radius: 30px;
+  }
+  #faq .footer .box-2 a {
+    font-size: 1.5rem;
+  }
+  #faq .box {
+    padding: 4em 3em;
+  }
+  #faq .accordion {
+    font-size: 2em;
+  }
+  #faq .answer {
+    font-size: 1.3rem;
+  }
+  #faq .question {
+    font-size: 1.5rem;
+  }
+
+  .structure {
+    background-image: url(../IMG/section7wire.svg), url(../IMG/Star\ red.svg);
+    background-position: left 10% top 0, right 3% top 0;
+  }
+  .structure .text {
+    font-size: 2.2em;
+  }
+  .structure .heading {
+    font-size: 4em;
+  }
+  .structure .title {
+    font-size: 2em;
+  }
+  .structure .course {
+    flex-direction: column;
+    align-items: center;
+    background-image: none;
+  }
+  .structure .course > div {
+    width: 100%;
+    padding: 6em 4em;
+    border-radius: 70px;
+  }
+  .course::before {
+    bottom: -5%;
+  }
+  .course h1 {
+    font-size: 4em;
+  }
+  .course h3 {
+    font-size: 2.5em;
+  }
+  .course ul li {
+    font-size: 1.7em;
+  }
+  .course .head {
+    font-size: 1.5em;
+  }
+  .full-time::after {
+    bottom: 0;
+  }
+  .part-time::after {
+    bottom: 0;
+  }
+  .break {
+    padding: 10em 0;
+    gap: 50px;
+  }
+  .break p {
+    font-size: 2em;
+  }
+  .break h1 {
+    font-size: 3.5em;
+    text-align: center;
+    padding: 0 3em;
+  }
+  .break button {
+    font-size: 2em;
+  }
+  footer {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8em;
+    gap: 1.5em;
+  }
+  footer > div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  footer .logo {
+    order: 1;
+  }
+  footer .logo img {
+    width: 85%;
+  }
+  footer .imgs {
+    order: 2;
+    width: 50%;
+    gap: 30px;
+  }
+
+  footer .copyright {
+    order: 4;
+    width: 100%;
+  }
+  footer p {
+    font-size: 2em;
+  }
+  footer .text {
+    order: 3;
+    width: 100%;
+    gap: 3em;
+  }
+
+  footer .imgs i {
+    width: 30%;
+    font-size: 40px;
+    padding: 0.5em;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+  }
+
+  footer .text {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  footer .text a {
+    font-size: 2em;
+  }
 }
 
-.menu ul li{
-  display: none;
-}
-.round{
-clip-path: circle();
-width: 85px;
-height: 85px;
-margin-right: -40px;
-}
- .now {
-  font-size: 1.5em;
- padding:1.3em 0;
- width: 200px;
- height: 60px;
- padding-left: 50px;
- border-radius: 40px;
- 
-}
+@media screen and (min-width: 420px) and (max-width: 830px) {
+  body {
+    width: 100%;
+  }
+  .body {
+    margin: 0;
+  }
+  .body {
+    padding: 0 2em;
+  }
+  header {
+    width: 100%;
+  }
 
-.round{
-  margin-right: -40px;
-} 
-.part-1{
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
-  padding: 0;
-  background-image: url(../IMG/line.svg), 
-  url(../IMG/section1wire.svg);
-  background-position: bottom 30% left 95%,  bottom 0 right 30%;
- padding-bottom: 10em;
-}
-.part-1 .img2{
-  display: none;
-}
-.part-1 .img1 img{
-  width: 620px;
-  height: 620px;
-}
-.section-1 h1{
-  font-size:3em;
-}
-.section-1 .text{
-  font-size: 1.5em;
-  
-}
-.section-1 .title{
-  font-size: 2.3em;
-}
-.section-1 button{
-  padding: 1em 3em;
-  font-size: 18px;
-}
- #about{
-   flex-direction: column;
-   padding: 2em 0;
- }
- #about .box-1 h2,#about .box-3 p{
-   text-align: center;
-   font-size: 1.6em;
- }
- #about .box-3 p{
-   text-align: right;
-   color: #1b1a20;
-   font-size: 1.2em;
- }
- #about .box-3 a{
-   font-size: 17px;
- }
- #about .box-2{
-   display: flex;
-   justify-content: center;
- }
- #why{
-  background-position: top 15% left 55%;
-  padding-top: 10em;
-}
-#why .star{
-  display: none;
-}
-#why .text h1{
-  font-size: 30px;
-}
-.why-boxes{
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
-.why-boxes > div{
-  width:90%;
-  padding: 3em 5em;
-  gap: 40px;
-}
-.why-boxes p {
- padding: 0;
-}
-.why-boxes #box-1, .why-boxes #box-2,.why-boxes #box-3,.why-boxes #box-4,.why-boxes #box-5,.why-boxes #box-6{
-  background-size: 250px;
-}
-.cta{
-  padding: 5em 2em;
- padding-left: 4em;
-}
-.cta .top{
-  flex-wrap: nowrap;
-  flex-direction: column;
-  width: 100%;
-  padding: 0;
-  align-items: flex-start;
-}
-.top > div {
-  width: 100%;
-}
-.top .box-1{
-  order: 1;
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  flex-grow: 1;
-}
-.top .box-2{
-  order: 3;
-  display: flex;
- justify-items: center;
-}
-.top .box-3{
-  order: 2;
-}
-.top .box-1 .content {
- padding-right: 3em;
-}
-.top .box-1 h1 {
-  font-size: 2em;
-}
-.top button{
-  margin-top: 1em;
-  margin-bottom: 4em;
-}
-.cta .box-3{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 50px;
- justify-content: space-around;
-}
-.cta .box-3 > div{
-  width: 30%;
-  justify-content:flex-start;
-  gap: 5px;
-  border-radius: 60px;
-  padding: .2em .5em;
-}
-#stacks-covered h1{
-align-self: flex-start;
-font-size: 2em;
-width: 60%;
-}
-.stack-boxes{
-  flex-wrap: nowrap;
-  flex-direction: column;
-}
-.stack-boxes > div{
-  width: 100%;
-  padding-top: 2em;
-  padding-bottom: 4em;
-}
-.stack-boxes .logo{
-  gap: 12px;
-}
-#faq .footer{
-  margin-top: 4em;
-}
-#faq{
-  padding-top: 9em;
-  margin: 0 2em;
-}
-.structure .course{
-flex-direction: column;
-}
-.structure .course > div{
-  width: 100%;}
-  .break{
+  .menu ul li {
+    display: none;
+  }
+  .round {
+    clip-path: circle();
+    width: 85px;
+    height: 85px;
+    margin-right: -40px;
+  }
+  .now {
+    font-size: 1.5em;
+    padding: 1.3em 0;
+    width: 200px;
+    height: 60px;
+    padding-left: 50px;
+    border-radius: 40px;
+  }
+
+  .round {
+    margin-right: -40px;
+  }
+  .part-1 {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding: 0;
+    background-image: url(../IMG/line.svg), url(../IMG/section1wire.svg);
+    background-position: bottom 30% left 95%, bottom 0 right 30%;
+    padding-bottom: 10em;
+  }
+  .part-1 .img2 {
+    display: none;
+  }
+  .part-1 .img1 img {
+    width: 620px;
+    height: 620px;
+  }
+  .section-1 h1 {
+    font-size: 3em;
+  }
+  .section-1 .text {
+    font-size: 1.5em;
+  }
+  .section-1 .title {
+    font-size: 2.3em;
+  }
+  .section-1 button {
+    padding: 1em 3em;
+    font-size: 18px;
+  }
+  #about {
+    flex-direction: column;
+    padding: 2em 0;
+  }
+  #about .box-1 h2,
+  #about .box-3 p {
+    text-align: center;
+    font-size: 1.6em;
+  }
+  #about .box-3 p {
+    text-align: right;
+    color: #1b1a20;
+    font-size: 1.2em;
+  }
+  #about .box-3 a {
+    font-size: 17px;
+  }
+  #about .box-2 {
+    display: flex;
+    justify-content: center;
+  }
+  #why {
+    background-position: top 15% left 55%;
+    padding-top: 10em;
+  }
+  #why .star {
+    display: none;
+  }
+  #why .text h1 {
+    font-size: 30px;
+  }
+  .why-boxes {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .why-boxes > div {
+    width: 90%;
+    padding: 3em 5em;
+    gap: 40px;
+  }
+  .why-boxes p {
+    padding: 0;
+  }
+  .why-boxes #box-1,
+  .why-boxes #box-2,
+  .why-boxes #box-3,
+  .why-boxes #box-4,
+  .why-boxes #box-5,
+  .why-boxes #box-6 {
+    background-size: 250px;
+  }
+  .cta {
+    padding: 5em 2em;
+    padding-left: 4em;
+  }
+  .cta .top {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    align-items: flex-start;
+  }
+  .top > div {
+    width: 100%;
+  }
+  .top .box-1 {
+    order: 1;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  .top .box-2 {
+    order: 3;
+    display: flex;
+    justify-items: center;
+  }
+  .top .box-3 {
+    order: 2;
+  }
+  .top .box-1 .content {
+    padding-right: 3em;
+  }
+  .top .box-1 h1 {
+    font-size: 2em;
+  }
+  .top button {
+    margin-top: 1em;
+    margin-bottom: 4em;
+  }
+  .cta .box-3 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: space-around;
+  }
+  .cta .box-3 > div {
+    width: 30%;
+    justify-content: flex-start;
+    gap: 5px;
+    border-radius: 60px;
+    padding: 0.2em 0.5em;
+  }
+  #stacks-covered h1 {
+    align-self: flex-start;
+    font-size: 2em;
+    width: 60%;
+  }
+  .stack-boxes {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .stack-boxes > div {
+    width: 100%;
+    padding-top: 2em;
+    padding-bottom: 4em;
+  }
+  .stack-boxes .logo {
+    gap: 12px;
+  }
+  #faq .footer {
+    margin-top: 4em;
+  }
+  #faq {
+    padding-top: 9em;
+    margin: 0 2em;
+  }
+  .structure .course {
+    flex-direction: column;
+  }
+  .structure .course > div {
+    width: 100%;
+  }
+  .break {
     margin-bottom: 5em;
   }
-  .break h1{
-    padding: .3em 3em;
+  .break h1 {
+    padding: 0.3em 3em;
   }
 }

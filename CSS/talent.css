@@ -5,9 +5,8 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
- 
 }
-html{
+html {
   scroll-padding-top: 7rem;
 }
 body {
@@ -16,7 +15,7 @@ body {
   font-family: "Roboto";
   width: 100%;
 }
-button{
+button {
   outline: none;
 }
 /* Navigation bar */
@@ -34,11 +33,11 @@ nav {
   padding-bottom: 2.5rem;
 }
 
-nav .page-logo{
+nav .page-logo {
   width: 40%;
 }
 
-nav .nav{
+nav .nav {
   width: 60%;
 }
 
@@ -60,7 +59,7 @@ nav .nav{
 }
 .nav li {
   list-style: none;
-  width: 70px;
+  width: 200px;
   position: relative;
   text-align: center;
   padding: 10px 0;
@@ -68,21 +67,18 @@ nav .nav{
   cursor: pointer;
 }
 
-nav ul li :hover{  
-    color: #e7332b;
+nav ul li :hover {
+  color: #e7332b;
 }
 
-nav ul li .active{
+nav ul li .active {
   color: #e7332b;
   border-bottom: 5px solid currentColor;
   border-radius: 2px;
   bottom: 0;
   background-color: aliceblue;
-  padding: .6rem 1.2rem;
+  padding: 0.6rem 2rem;
 }
-
-
-
 
 header .page-logo {
   align-self: center;
@@ -122,9 +118,8 @@ nav button {
   justify-content: flex-end;
   align-items: center;
   position: relative;
- 
 }
-#home .image img{
+#home .image img {
   width: 70%;
 }
 #home .image::after {
@@ -295,11 +290,15 @@ nav button {
   gap: 15px;
   margin-top: 5em;
 }
+.reasons > div {
+  transition: background-color 300ms ease-in-out;
+}
 .reasons > div:hover {
   background-color: black;
   color: white;
+  cursor: pointer;
 }
-.reasons > div:hover img{
+.reasons > div:hover img {
   transform: translateY(-7px);
 }
 .reasons > div {
@@ -335,7 +334,7 @@ nav button {
   font-size: 20px;
   cursor: pointer;
 }
-#whyus :is(.btn-1,.btn-2) {
+#whyus :is(.btn-1, .btn-2) {
   transition: box-shadow 300ms ease;
   box-shadow: rgb(0 0 0 / 20%) 0px 3px 1px -2px,
     rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 1px 5px 0px;
@@ -366,7 +365,7 @@ footer {
   padding: 5em 3.5em;
   padding-bottom: 0;
 }
-footer > div{
+footer > div {
   width: 40%;
   margin-bottom: 2em;
 }
@@ -389,12 +388,12 @@ footer i {
 .fa-facebook,
 .fa-linkedin {
   padding: 0.3em 0.45em;
-} 
-footer .text{
+}
+footer .text {
   display: flex;
   justify-content: flex-end;
 }
-footer .hr{
+footer .hr {
   display: none;
 }
 /* MODAL */
@@ -410,7 +409,6 @@ footer .hr{
   transition: display 200ms ease;
 }
 
-
 .modal-content {
   background-color: white;
   padding: 30px;
@@ -423,23 +421,23 @@ footer .hr{
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
-#myModal .modal-content{
+#myModal .modal-content {
   gap: 15px;
 }
 
-.content2{
+.content2 {
   height: 40%;
 }
 
-:is(.modal,.modal-talent) h1 {
+:is(.modal, .modal-talent) h1 {
   text-transform: capitalize;
   font-size: 3em;
   text-align: center;
 }
-:is(.modal,.modal-talent) p {
+:is(.modal, .modal-talent) p {
   color: #787878;
   font-size: 1.5em;
   text-align: center;
@@ -472,7 +470,7 @@ footer .hr{
   margin-top: 10px;
 }
 
-.modal-talent button{
+.modal-talent button {
   background-color: red;
   border: none;
   padding: 1rem 1.5rem;
@@ -483,393 +481,385 @@ footer .hr{
   border-bottom-right-radius: 15px;
   cursor: pointer;
 }
-.modal-talent .modal-content{
+
+.modal-talent .modal-content {
   gap: 1.7rem;
   padding: 50px;
 }
 
+button {
+  transition: all 200ms ease;
+}
 
+button:hover {
+  transform: translateY(-5px);
+  box-shadow: none;
+}
 
 /* media query */
-@media screen and (max-width:400px){
-  
-  body{
-      width: 100%;
-      padding: 0;
+@media screen and (max-width: 420px) {
+  body {
+    width: 100%;
+    padding: 0;
   }
- .body{
-   padding: 0;
-   margin: 0;
- }
-  nav{
-      padding: 1.5rem 1rem;
+  .body {
+    padding: 0;
+    margin: 0;
   }
-  .nav ul li{
-      display: none;
+  nav {
+    padding: 1.5rem 1rem;
   }
-  .nav ul{
-      justify-content: flex-end; 
+  .nav ul li {
+    display: none;
+  }
+  .nav ul {
+    justify-content: flex-end;
   }
 
-  #home{
-      flex-direction: column;
-      gap: 40px;
-      padding: 4em 3em;
-      margin-bottom: 25em;
-      
+  #home {
+    flex-direction: column;
+    gap: 40px;
+    padding: 4em 3em;
+    margin-bottom: 25em;
   }
-  #home .image{
-     display: flex;
-     justify-content: center;
-      
+  #home .image {
+    display: flex;
+    justify-content: center;
   }
-  #home .image img{
+  #home .image img {
     width: 100%;
   }
-  #home .image::after{
-      background-image: none;
+  #home .image::after {
+    background-image: none;
   }
 
-  #home .talent h1{
-      text-align: center;
-      font-size: 2.5em;
-      margin-bottom: .5em;
+  #home .talent h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
   }
-  #home .talent p{
-      text-align: center;
-      font-size: .9rem;
-      margin-bottom: .5em;
-   
+  #home .talent p {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-bottom: 0.5em;
   }
-  #home .btns{
+  #home .btns {
     justify-content: center;
     display: flex;
   }
   #home .btn-1 button {
-      
-      padding: 10px 15px;
-      color: white;
-      border-bottom-right-radius: 7px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-    #home .btn-2 button {
-      background-color: #514949;
-      border: none;
-      padding: 10px 7px;
-      color: white;
-      border-bottom-right-radius: 7px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-  
+    padding: 10px 15px;
+    color: white;
+    border-bottom-right-radius: 7px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  #home .btn-2 button {
+    background-color: #514949;
+    border: none;
+    padding: 10px 7px;
+    color: white;
+    border-bottom-right-radius: 7px;
+    font-size: 16px;
+    cursor: pointer;
+  }
 
-    #home .btn-1,
-.btn-2 {
-box-shadow: none;}
+  #home .btn-1,
+  .btn-2 {
+    box-shadow: none;
+  }
 
-#impact{
+  #impact {
     flex-direction: column;
     padding: 3em 2em;
     gap: 5em;
-}
-#impact .text h1 {
-  font-size: 26.5px;
-}
-#impact .text h3 {
-  font-size: 18px;
-}
-#impact .text p {
-  font-size: 1rem;
-}
-#impact .image {
-  display: block;
-}
-#impact .countries > div {
-  width: 40%;
-  padding: 10px 5px;
-}
-.skills-you-need{
+  }
+  #impact .text h1 {
+    font-size: 26.5px;
+  }
+  #impact .text h3 {
+    font-size: 18px;
+  }
+  #impact .text p {
+    font-size: 1rem;
+  }
+  #impact .image {
+    display: block;
+  }
+  #impact .countries > div {
+    width: 40%;
+    padding: 10px 5px;
+  }
+  .skills-you-need {
     padding: 3em 0;
     padding-left: 2em;
-}
-#wavy{
+  }
+  #wavy {
     background-image: none;
-}
-.skills h1 {
-  font-size: 34px;
-}
-.track{
+  }
+  .skills h1 {
+    font-size: 34px;
+  }
+  .track {
     flex-wrap: wrap;
-}
-.track > div{
+  }
+  .track > div {
     width: 40%;
-  
+
     font-size: 16px;
-}
-#whyus{
-  background-position: left 0 top 28%;
-  background-size: 60%;
-}
-#whyus h1 {
-  font-size: 30px;
-}
-.reasons{
-flex-wrap: nowrap;
-flex-direction: column;
-width: 100%;
-margin-top: 3em;
-margin-bottom: 0;
-}
-.reasons > div{
+  }
+  #whyus {
+    background-position: left 0 top 28%;
+    background-size: 60%;
+  }
+  #whyus h1 {
+    font-size: 30px;
+  }
+  .reasons {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 3em;
+    margin-bottom: 0;
+  }
+  .reasons > div {
     width: 100%;
     font-size: 16px;
-}
-#whyus .btn1 button {
-  padding: 9px 15px;
-  font-size: 18px;
-}
-#whyus .btn2 button {
-  padding: 9px 15px;
-  font-size: 18px;
-}
-#whyus .btn1,
-.btn2 {
-box-shadow:none;
-}
-footer{
-  flex-direction: column;
-
-}
-footer > div{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-footer .img{
-  order: 1;
-}
-footer .imgs{
-  order: 2;
-  display: flex;
-  justify-content: center;
-}
-footer .copyright {
-  order: 4 ;
- 
-}
-.copyright p{
-  text-align: center;
-}
-footer .text{
-  order: 3;
-  flex-direction: column;
-  justify-content: center;
-  gap: 20px;
-}
-footer .text p{
-  text-align: center;
-}
-footer .hr{
-  display: block;
-}
-.modal-content{
-  width: 80%;
-  gap: 1.5rem;
-}
-.modal-talent button{
-  padding: 1rem ;
-}
-.content2{
-  height: fit-content;
-}
-#myModal .modal-content{
-  gap: 30px;
-  padding-top: 50px;
-  height: fit-content;
-}
-.modal h1{
-  font-size: 2rem;
-}
-}
-
-
- @media screen and (min-width:400px) and (max-width:830px){
-  body{
+  }
+  #whyus .btn1 button {
+    padding: 9px 15px;
+    font-size: 18px;
+  }
+  #whyus .btn2 button {
+    padding: 9px 15px;
+    font-size: 18px;
+  }
+  #whyus .btn1,
+  .btn2 {
+    box-shadow: none;
+  }
+  footer {
+    flex-direction: column;
+  }
+  footer > div {
     width: 100%;
-  margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  footer .img {
+    order: 1;
+  }
+  footer .imgs {
+    order: 2;
+    display: flex;
+    justify-content: center;
+  }
+  footer .copyright {
+    order: 4;
+  }
+  .copyright p {
+    text-align: center;
+  }
+  footer .text {
+    order: 3;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+  footer .text p {
+    text-align: center;
+  }
+  footer .hr {
+    display: block;
+  }
+  .modal-content {
+    width: 80%;
+    gap: 1.5rem;
+  }
+  .modal-talent button {
+    padding: 1rem;
+  }
+  .content2 {
+    height: fit-content;
+  }
+  #myModal .modal-content {
+    gap: 30px;
+    padding-top: 50px;
+    height: fit-content;
+  }
+  .modal h1 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 420px) and (max-width: 830px) {
+  body {
+    width: 100%;
+    margin: 0;
     margin-right: 0;
     padding-right: 0;
-   
   }
-   
-  nav{
+
+  nav {
     padding: 1.5rem 2rem;
-   
-}
-.nav ul li{
+  }
+  .nav ul li {
     display: none;
-}
-.nav ul{
-    justify-content: flex-end; 
-}
-#home{
-  flex-direction: column;
-  gap: 40px;
-  padding:6em 5.3em;
-  margin-bottom: 30em;
-  
-}
-#home .image{
- display: flex;
- justify-content: center;
-  
-}
-#home .image::after{
-  background-image: none;
-}
+  }
+  .nav ul {
+    justify-content: flex-end;
+  }
+  #home {
+    flex-direction: column;
+    gap: 40px;
+    padding: 6em 5.3em;
+    margin-bottom: 30em;
+  }
+  #home .image {
+    display: flex;
+    justify-content: center;
+  }
+  #home .image::after {
+    background-image: none;
+  }
 
-#home .talent h1{
-  text-align: center;
-  font-size: 3em;
-  margin-bottom: .6em;
-}
-#home .talent p{
-  text-align: center;
-  font-size: 20px;
-}
-#home .btns{
-  justify-content: center;
-}
-#home .btn-1 button {
-  
-  padding: 10px 35px;
-  color: white;
-  border-bottom-right-radius: 7px;
-  font-size: 20px;
-  cursor: pointer;
-}
-#home .btn-2 button {
-  background-color: #514949;
-  border: none;
-  padding: 10px 35px;
-  color: white;
-  border-bottom-right-radius: 7px;
-  font-size: 20px;
-  cursor: pointer;
-}
+  #home .talent h1 {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 0.6em;
+  }
+  #home .talent p {
+    text-align: center;
+    font-size: 20px;
+  }
+  #home .btns {
+    justify-content: center;
+  }
+  #home .btn-1 button {
+    padding: 10px 35px;
+    color: white;
+    border-bottom-right-radius: 7px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  #home .btn-2 button {
+    background-color: #514949;
+    border: none;
+    padding: 10px 35px;
+    color: white;
+    border-bottom-right-radius: 7px;
+    font-size: 20px;
+    cursor: pointer;
+  }
 
-#home .btn-1,
-.btn-2 {
-box-shadow: none;}
+  #home .btn-1,
+  .btn-2 {
+    box-shadow: none;
+  }
 
-#impact{
-  flex-direction: column;
-  padding: 5em 0;
-  gap: 5em;
-  margin-top: 30em;
-}
-#impact .text h1 {
-font-size: 35px;
-text-align: center;
+  #impact {
+    flex-direction: column;
+    padding: 5em 0;
+    gap: 5em;
+    margin-top: 30em;
+  }
+  #impact .text h1 {
+    font-size: 35px;
+    text-align: center;
+  }
+  #impact .text h3 {
+    font-size: 18px;
+    text-align: center;
+  }
+  #impact .text p {
+    font-size: 1rem;
+    text-align: center;
+  }
+  #impact .image {
+    display: flex;
+    justify-content: center;
+  }
 
-}
-#impact .text h3 {
-font-size: 18px;
-text-align: center;
-}
-#impact .text p {
-font-size: 1rem;
-text-align: center;
-}
-#impact .image {
-display: flex;
-justify-content: center;
-}
+  #impact .countries {
+    width: 100%;
+    justify-content: center;
+  }
+  #impact .countries > div {
+    width: 10%;
+    padding: 10px 5px;
+  }
 
-#impact .countries{
-  width: 100%;
-  justify-content: center;
+  .skills-you-need {
+    padding: 3em 0;
+    padding-left: 4em;
+    padding-right: 0;
+  }
+  #wavy {
+    background-image: none;
+  }
+  .skills h1 {
+    font-size: 34px;
+    text-align: center;
+  }
+  .track {
+    flex-wrap: wrap;
+  }
+  .track > div {
+    width: 30%;
 
-}
-#impact .countries > div {
-width: 10%;
-padding: 10px 5px;
-}
-
-
-.skills-you-need{
-  padding: 3em 0;
-  padding-left: 4em ;
-  padding-right: 0;
-}
-#wavy{
-  background-image: none;
-}
-.skills h1 {
-font-size: 34px;
-text-align: center;
-}
-.track{
-  flex-wrap: wrap;
-}
-.track > div{
-  width: 30%;
-
-  font-size: 16px;
-}
-#whyus{
-  background-position: left 0 top 42%;
-  background-size: 40%;
-}
-#whyus h1 {
-  font-size: 30px;
-}
-.reasons{
-width: 100%;
-margin-top: 5em;
-}
-.reasons > div{
+    font-size: 16px;
+  }
+  #whyus {
+    background-position: left 0 top 42%;
+    background-size: 40%;
+  }
+  #whyus h1 {
+    font-size: 30px;
+  }
+  .reasons {
+    width: 100%;
+    margin-top: 5em;
+  }
+  .reasons > div {
     width: 45%;
     font-size: 16px;
+  }
+  #many {
+    width: 93%;
+    display: block;
+  }
 
-}
-#many{
-  width: 93%;
-  display: block;
-}
+  #whyus .btn1 button {
+    padding: 9px 15px;
+    font-size: 18px;
+  }
+  #whyus .btn2 button {
+    padding: 9px 15px;
+    font-size: 18px;
+  }
+  #whyus .btn1,
+  .btn2 {
+    box-shadow: none;
+  }
 
-#whyus .btn1 button {
-  padding: 9px 15px;
-  font-size: 18px;
+  footer .img {
+    display: flex;
+  }
+  footer .logo {
+    width: 50%;
+  }
+  .copyright {
+    width: 60%;
+  }
+  .copyright p {
+    font-size: 18px;
+    padding: 0;
+  }
+  .modal-content {
+    width: 80%;
+    gap: 1.5rem;
+  }
+  .modal h1 {
+    font-size: 2rem;
+  }
 }
-#whyus .btn2 button {
-  padding: 9px 15px;
-  font-size: 18px;
-}
-#whyus .btn1,
-.btn2 {
-box-shadow:none;
-}
-
-footer .img{
-  display: flex;
-}
-footer .logo{
-width: 50%;
-}
-.copyright{
-  width: 60%;
-}
-.copyright p{
-  font-size: 18px;
-  padding: 0;
-}
-.modal-content{
-  width: 80%;
-  gap: 1.5rem;
-}
-.modal h1{
-  font-size: 2rem;
-}
-} 
