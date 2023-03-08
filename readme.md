@@ -17,8 +17,8 @@ I was given a final project at my internship to recreate three webpages of the [
 - [Acknowledgments](#acknowledgments)
 
 ## Overview
-The zuri website has multiple pages but this project requires just three of those projects. This is an interesting and brilliant way to test all that I was taught during the internship as the page includes using intermediate css skills and also javascript. The result of this project will be a measure of my programming skills at the moment.
 
+The zuri website has multiple pages but this project requires just three of those projects. This is an interesting and brilliant way to test all that I was taught during the internship as the page includes using intermediate css skills and also javascript. The result of this project will be a measure of my programming skills at the moment.
 
 ### The challenge
 
@@ -28,12 +28,12 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 - Have good experiemce while usung the website
 - Easy navigation and control
--Smooth transitions of animations
+  -Smooth transitions of animations
 - Beautiful colors that accentuate one another and are peasing to the users
 - Pixel perfect
 
-
 ### Screenshot
+
 ![](./IMG/Screenshot%202022-11-01%20153737.png)
 
 ![](./IMG/training.png)
@@ -46,21 +46,22 @@ Users should be able to:
 - [Live site URL](https://rasheedatj.github.io/Zuri-Clone/
 
 ## My process
-My first step was examining the website I was to recreate, I checked the layout of the three pages and I made sketches of how to go about the layout of the page. Starting with the landing page I wrote the html for the page first then i procedded to stylinf it and then lastly I addad javascript functionalities. I used the same process for the other two pages except they were more tedious and hence needed extra work. I encountered little problem that required me going to seek answers from tutorials which I did I leanrt them for future purposes as well. I didnt work with the mobile first workflow so I stared working on the reepsonsiveness from the bigger viewports,this is the method I find easier. I concluded the project by carrying out a cross examination on all the pages and making correction where needed to the html, css and javascript.
 
+My first step was examining the website I was to recreate, I checked the layout of the three pages and I made sketches of how to go about the layout of the page. Starting with the landing page I wrote the html for the page first then i procedded to stylinf it and then lastly I addad javascript functionalities. I used the same process for the other two pages except they were more tedious and hence needed extra work. I encountered little problem that required me going to seek answers from tutorials which I did I leanrt them for future purposes as well. I didnt work with the mobile first workflow so I stared working on the reepsonsiveness from the bigger viewports,this is the method I find easier. I concluded the project by carrying out a cross examination on all the pages and making correction where needed to the html, css and javascript.
 
 ### Built with
 
 - Semantic HTML5 markup
- 
+
   ![](./IMG/html.svg)
+
 - CSS custom properties
 
-    ![](./IMG/css-3%20logo.svg)
+  ![](./IMG/css-3%20logo.svg)
+
 - Javascript
 
-    ![](./IMG/javascript%20logo%20(1).svg)
-
+  ![](<./IMG/javascript%20logo%20(1).svg>)
 
 ### What I learned
 
@@ -69,24 +70,25 @@ My first step was examining the website I was to recreate, I checked the layout 
 - onclick event
 - More on how to create a modal
 
-
 ```html
-      <div class="modal" id="myModal">
-    <div class="modal-content">
-      <h1>talent requirement</h1>
-      <p>We will love to discuss your business <br>
-         and your talent needs.</p>
-       <div class="button">
-        <a href="https://forms.gle/QFsTDVg2EhpY32Pd9">
-          <button class="btn-1">Fill this form</button>
-        </a>
-        <p>or</p>
-        <a href="https://calendly.com/zuri-team/consult-with-seyi?month=2022-04">
-          <button class="btn-2">Book a Consultation</button>
-        </a>
-       </div>
+<div class="modal" id="myModal">
+  <div class="modal-content">
+    <h1>talent requirement</h1>
+    <p>
+      We will love to discuss your business <br />
+      and your talent needs.
+    </p>
+    <div class="button">
+      <a href="https://forms.gle/QFsTDVg2EhpY32Pd9">
+        <button class="btn-1">Fill this form</button>
+      </a>
+      <p>or</p>
+      <a href="https://calendly.com/zuri-team/consult-with-seyi?month=2022-04">
+        <button class="btn-2">Book a Consultation</button>
+      </a>
     </div>
-   </div>
+  </div>
+</div>
 ```
 
 ```css
@@ -106,14 +108,17 @@ My first step was examining the website I was to recreate, I checked the layout 
 ```
 
 ```js
-openBtn.addEventListener('click',
-    function(){
-      modal.style.display ='flex'
-      modal.style.backgroundColor ='rgba(0, 0, 0, 0.7)'
-    }
-)
-```
+let modal = document.querySelector(".modal");
+let modalBtn = document.querySelectorAll(".pop");
 
+modalBtn.forEach((popUp) =>
+  popUp.addEventListener("click", () => {
+    popUp.classList.add("pop");
+    modal.style.display = "flex";
+    modal.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
+  })
+);
+```
 
 ## Author
 
