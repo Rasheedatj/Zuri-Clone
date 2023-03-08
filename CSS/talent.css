@@ -120,7 +120,7 @@ nav button {
   position: relative;
 }
 #home .image img {
-  width: 70%;
+  width: 80%;
 }
 #home .image::after {
   content: "";
@@ -413,7 +413,7 @@ footer .hr {
   background-color: white;
   padding: 30px;
   width: 50%;
-  height: 55%;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -422,14 +422,11 @@ footer .hr {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  padding-bottom: 3rem;
 }
 
 #myModal .modal-content {
   gap: 15px;
-}
-
-.content2 {
-  height: 40%;
 }
 
 :is(.modal, .modal-talent) h1 {
