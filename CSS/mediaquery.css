@@ -347,6 +347,10 @@
     gap: 30px;
   }
 
+  .footer .imgs a {
+    text-decoration: none;
+  }
+
   footer .copyright {
     order: 4;
     width: 100%;
@@ -360,13 +364,15 @@
     gap: 3em;
   }
 
+  .footer .imgs {
+    justify-content: center;
+  }
+
   footer .imgs i {
     width: 30%;
     font-size: 40px;
-    padding: 0.5em;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
+    width: 6rem;
+    height: 6rem;
   }
 
   footer .text {
